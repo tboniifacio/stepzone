@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StepZone | Estilo em cada passo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="header">
+      <div class="container header__content">
+        <a href="index.html" class="logo">Step<span>Zone</span></a>
+        <nav class="nav" data-nav>
+          <a href="#hero">In&iacute;cio</a>
+          <a href="products.html">Produtos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <div class="header__actions">
+          <a href="cart.html" class="cart-link" aria-label="Abrir carrinho" data-cart-link>
+            <span class="cart-link__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M6 6h15l-1.5 9h-12z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
+                <path d="M6 6l-2-3H2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+                <circle cx="9" cy="19" r="1.5" fill="currentColor"></circle>
+                <circle cx="18" cy="19" r="1.5" fill="currentColor"></circle>
+              </svg>
+            </span>
+            <span class="badge badge--cart is-hidden" data-cart-badge role="status" aria-live="polite">0</span>
+          </a>
+          <button class="nav__toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="container hero__grid">
+          <div class="hero__bubbles" aria-hidden="true"></div>
+          <div class="hero__text">
+            <span class="hero__tag">Cole&ccedil;&atilde;o Neon</span>
+            <h1 class="hero__title">Estilo em cada passo</h1>
+            <p class="hero__subtitle">
+              Descubra os melhores t&ecirc;nis, &oacute;culos e rel&oacute;gios para expressar sua personalidade &uacute;nica.
+            </p>
+            <a href="products.html" class="btn btn--primary">Ver Produtos</a>
+          </div>
+          <div class="hero__visual">
+            <img src="ChatGPT Image 15 de out. de 2025, 13_00_30.png" alt="T&ecirc;nis StepZone em destaque" />
+            <div class="hero__bubble hero__bubble--pink"></div>
+            <div class="hero__bubble hero__bubble--yellow"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--carousel">
+        <div class="container section__header">
+          <div>
+            <h2 class="section__title">Destaques da semana</h2>
+            <p class="section__subtitle">
+              Sele&ccedil;&atilde;o especial de t&ecirc;nis, &oacute;culos e rel&oacute;gios que combinam com o seu ritmo.
+            </p>
+          </div>
+          <div class="carousel__controls">
+            <button class="carousel__btn" type="button" data-carousel-prev aria-label="Produtos anteriores">&lsaquo;</button>
+            <button class="carousel__btn" type="button" data-carousel-next aria-label="Pr&oacute;ximos produtos">&rsaquo;</button>
+          </div>
+        </div>
+        <div class="container">
+          <div class="product-carousel" data-carousel>
+            <!-- Cards renderizados via JS -->
+          </div>
+        </div>
+      </section>
+
+      <section class="section categories">
+        <div class="container">
+          <h2 class="section__title">Nossas Categorias</h2>
+          <p class="section__subtitle">Encontre o acess&oacute;rio ideal para cada momento.</p>
+          <div class="categories__grid">
+            <a class="category-card" href="products.html?category=tenis">
+              <img src="prod-tenis.svg" alt="T&ecirc;nis StepZone" loading="lazy" />
+              <h3 class="category-card__title">T&ecirc;nis</h3>
+              <p class="category-card__desc">Modelos para corrida, lifestyle e treinos intensos.</p>
+              <span class="category-card__cta">Explorar t&ecirc;nis</span>
+            </a>
+            <a class="category-card" href="products.html?category=oculos">
+              <img src="prod-oculos.svg" alt="&Oacute;culos StepZone" loading="lazy" />
+              <h3 class="category-card__title">&Oacute;culos</h3>
+              <p class="category-card__desc">Prote&ccedil;&atilde;o com estilo para qualquer ocasi&atilde;o.</p>
+              <span class="category-card__cta">Explorar &oacute;culos</span>
+            </a>
+            <a class="category-card" href="products.html?category=relogios">
+              <img src="prod-relogio.svg" alt="Rel&oacute;gios StepZone" loading="lazy" />
+              <h3 class="category-card__title">Rel&oacute;gios</h3>
+              <p class="category-card__desc">Tecnologia inteligente e design sofisticado.</p>
+              <span class="category-card__cta">Explorar rel&oacute;gios</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--featured">
+        <div class="container">
+          <h2 class="section__title">Produtos em destaque</h2>
+          <p class="section__subtitle">
+            Seis favoritos da comunidade StepZone para voc&ecirc; atualizar o visual sem perder a performance.
+          </p>
+          <div class="products__grid" data-featured-grid>
+            <!-- Produtos destacados renderizados via JS -->
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--cta">
+        <div class="container cta">
+          <div class="cta__text">
+            <h2>Assine a StepZone+</h2>
+            <p>Receba ofertas exclusivas, lan&ccedil;amentos antecipados e frete gr&aacute;tis nas compras acima de R$ 299.</p>
+          </div>
+          <form class="cta__form" id="cta-form">
+            <label class="visually-hidden" for="cta-email">Seu e-mail</label>
+            <input type="email" id="cta-email" name="email" placeholder="Digite seu e-mail" required />
+            <button type="submit" class="btn btn--secondary">Quero participar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contato" class="footer">
+      <div class="container footer__grid">
+        <div>
+          <a href="index.html" class="logo logo--footer">Step<span style="color: beige;">Zone</span></a>
+          <p class="footer__text">Estilo, tecnologia e conforto para cada passo.</p>
+          <p class="footer__text">contato@stepzone.com &bull; (11) 99999-0000</p>
+        </div>
+        <div>
+          <p class="footer__title">Siga a StepZone</p>
+          <div class="social">
+            <a href="#" aria-label="Instagram" class="social__link">Instagram</a>
+            <a href="#" aria-label="TikTok" class="social__link">TikTok</a>
+            <a href="#" aria-label="YouTube" class="social__link">YouTube</a>
+          </div>
+        </div>
+      </div>
+      <div class="copy">&copy; <span id="year"></span> StepZone. Todos os direitos reservados.</div>
+    </footer>
+
+    <script src="catalog.js"></script>
+    <script src="cart.js"></script>
+    <script src="ui.js"></script>
+    <script src="carousel.js"></script>
+    <script>
+  (function () {
+    const wrap = document.querySelector('.hero__bubbles');
+    if (!wrap) return;
+    const COLORS = ['#FF3CAC','#FFB302','#FFD3A5'];
+
+    for (let i = 0; i < 22; i++) {
+      const s = 8 + Math.random() * 22;
+      const b = document.createElement('span');
+      b.className = 'bubble';
+      b.style.width = s + 'px';
+      b.style.height = s + 'px';
+      b.style.left = Math.random() * 100 + '%';
+      b.style.animationDuration = (5 + Math.random() * 7) + 's';
+      b.style.animationDelay = (Math.random() * 3) + 's';
+      const c = COLORS[(Math.random() * COLORS.length) | 0];
+      b.style.background = `radial-gradient(circle, rgba(255,255,255,.35) 0%, ${c} 80%)`;
+      wrap.appendChild(b);
+    }
+  })();
+</script>
+  </body>
+</html>
